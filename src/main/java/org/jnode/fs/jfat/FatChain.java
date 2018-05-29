@@ -711,7 +711,7 @@ public class FatChain {
             cursor = fat.get(address);
 
             if (cursor == address)
-                throw new IOException("circular chain at: " + cursor);
+                throw new IOException("THIS ERROR: circular chain at: " + cursor);
 
             if (fat.isFree(cursor))
                 throw new IOException("free entry in chain at: " + address);
