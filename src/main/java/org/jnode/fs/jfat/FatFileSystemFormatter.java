@@ -34,7 +34,7 @@ import org.jnode.fs.Formatter;
 import org.jnode.partitions.PartitionTableEntry;
 import org.jnode.partitions.ibm.IBMPartitionTableEntry;
 //import org.jnode.naming.InitialNaming;
-import javax.naming.NameNotFoundException;
+//import javax.naming.NameNotFoundException;
 
 
 /**
@@ -108,8 +108,6 @@ public class FatFileSystemFormatter extends Formatter<FatFileSystem> {
         } catch (IOException ioe) {
             throw new FileSystemException("Formating problem", ioe);
         } catch (ApiNotFoundException e) {
-            throw new FileSystemException("Formating problem", e);
-        } catch (NameNotFoundException e) {
             throw new FileSystemException("Formating problem", e);
         }
     }
