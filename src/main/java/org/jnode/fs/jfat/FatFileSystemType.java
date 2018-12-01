@@ -87,8 +87,8 @@ public class FatFileSystemType implements BlockDeviceFileSystemType<FatFileSyste
             firstSectors[54] == 'F' &&
             firstSectors[55] == 'A' &&
             firstSectors[56] == 'T' &&
-            firstSectors[57] == '1' &&
-            (firstSectors[58] == '2' || firstSectors[58] == '6') &&
+            (firstSectors[57] == '1' || firstSectors[57] == ' ') &&
+            (firstSectors[58] == '2' || firstSectors[58] == '6' || firstSectors[58] == ' ') &&
             firstSectors[59] == ' ' &&
             firstSectors[60] == ' ' &&
             firstSectors[61] == ' ');
